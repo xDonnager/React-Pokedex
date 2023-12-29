@@ -12,7 +12,7 @@ const Footer = () => {
                 <img className={styles.footerIcon} src={Pikachu} alt="pokeball"></img>
                 Pokemons
             </Link>
-            <Link className={styles.footerLink} to="/pokemons">
+            <Link className={styles.footerLink} to="/items">
                 <img className={styles.footerIcon} src={Pokeball} alt="pokeball"></img>
                 Items
             </Link>

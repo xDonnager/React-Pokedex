@@ -7,8 +7,6 @@ export async function fetchPokemons(): Promise<Array<Pokemon>> {
     if (!response.ok) throw new Error('Something went wrong');
 
     const data = await response.json();
-    console.log(data);
-
     const pokemons = data.results.map((pokemon: any) => ({
         id: pokemon.national_number,
         name: pokemon.name,

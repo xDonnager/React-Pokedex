@@ -9,7 +9,6 @@ export async function fetchPokemon(pokemonName: string): Promise<PokemonDetails>
     if (!response.ok) throw new Error('Something went wrong');
 
     const data = await response.json();
-    console.log(data);
 
     return {
         name: data.name,
